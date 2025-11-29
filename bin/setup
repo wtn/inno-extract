@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+set -vx
+
+bundle install
+
+mkdir -p tmp
+curl -L -o tmp/innosetup-6.3.3.exe https://jrsoftware.org/download.php/innosetup-6.3.3.exe
